@@ -1,5 +1,5 @@
 // Set constraints for the video stream
-var constraints = { video: { facingMode: "environment" }, audio: false };
+var constraints = { video: { facingMode: "environment", width: 1280, height: 720 }, audio: false };
 
 // Define constants
 const cameraView = document.querySelector("#camera--view"),
@@ -33,4 +33,4 @@ cameraTrigger.onclick = function() {
 window.addEventListener("load", cameraStart, false);
 
 
-alert('update2');
+alert('update3');
