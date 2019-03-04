@@ -22,8 +22,8 @@ function cameraStart() {
 
 // Take a picture when cameraTrigger is tapped
 cameraTrigger.onclick = function() {
-    //cameraSensor.width = cameraView.videoWidth;
-    //cameraSensor.height = cameraView.videoHeight;
+    cameraSensor.width = 1280;// cameraView.videoWidth;
+    cameraSensor.height = 1920;// cameraView.videoHeight;
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
     cameraOutput.src = cameraSensor.toDataURL("image/webp");
     cameraOutput.classList.add("taken");
@@ -33,4 +33,4 @@ cameraTrigger.onclick = function() {
 window.addEventListener("load", cameraStart, false);
 
 
-alert('update');
+alert('update2');
