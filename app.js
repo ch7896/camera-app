@@ -33,4 +33,4 @@ cameraTrigger.onclick = function() {
 window.addEventListener("load", cameraStart, false);
 
 
-alert('update3');
+alert('update4');
